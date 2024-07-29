@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+block style
+    style
+        include ../static/style.css 
+block content
+    body 
+        section#introSection 
+            div Welcome to M3 
+            div.small Mansi's Makeup Magic
+        section#missionSection 
+            h2 Our Mission 
+            div.card
+                h3 Flawless Makeup
+                div.card-box
+                    div.card-img
+                        img(src='/static/card1.jpg')
+                    div.card-content
+                        p We have the best makeup professionals in the world
+            div.card
+                h3 Making you Wedding day special
+                div.card-box
+                    div.card-img
+                        img(src='/static/c.jpg')
+                    div.card-content
+                        p We commit to make your wedding day unforgettable
+            div.card
+                h3 Long Lasting HD Makeup
+                div.card-box
+                    div.card-img
+                        img(src='/static/lipstick.jpg')
+                    div.card-content
+                        p Waterproof and smudge free makeup
+        section#sponserSection 
+            h2 Our Sponsers
+            div#sponser 
+                img(src='/static/logo1.jpg' , alt='Sponser image', class='spimage')
+                img(src='/static/logo2.jpg' , alt='Sponser image', class='spimage')
+                img(src='/static/logo3.jpg' , alt='Sponser image', class='spimage')
+                img(src='/static/logo4.jpg' , alt='Sponser image', class='spimage')
+        script 
+            include ../static/index.js

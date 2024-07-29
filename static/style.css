@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;            /*to reset css so that there are no faltu gaps*/
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+#navbar{
+    background-color: rgb(116, 39, 82);
+    padding: 13px 4px;
+    font-family: "Roboto Mono", monospace;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+   /* justify-content: center;  for doing ul content in centr*/ 
+   align-items: center;
+   margin-right: 40px;
+}
+#navbar li {
+   list-style: none;
+ }
+#navbar li a{
+    color: wheat;
+   text-decoration: none; 
+   padding: 7px 11px;
+}
+#navbar li a:hover{
+    color: black;
+    font-weight: bold;
+}
+#introSection {
+    color:pink;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;  /* for writing m3 and mansi's makeup academy column wise one after another index.js line 16 17*/
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    background: center / cover  no-repeat url('/static/fashion.jpg');
+    height: 400px;
+    background-color: palevioletred;
+    padding-bottom: 24px;
+}
+#introSection div.small{
+    font-size: 44px;
+}
+#missionSection {
+   margin: auto;
+   width:100%;
+
+   
+}
+#missionSection h2{
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+}
+.card{
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 22px;
+    height: 210px;
+    background-color: grey;
+    color: greenyellow;
+    
+}
+
+.card h3{
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 15px 12px;
+    font-weight: bold;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height:  131px;
+    padding: 0px 14px;
+    margin: 0px 9px ;
+}
+
+.card-img img{
+   height: inherit;
+}
+
+.card-content{
+padding: 0px 10px;
+}
+
+.card-content p{
+   font-size: 19px; 
+}
+#sponserSection {
+    height: 400px;
+    background-color: papayawhip;
+    text-align: center;
+    padding-top: 50px;
+    /*font-family: "Noto Sans KR", sans-serif;*/
+   
+    font-family: "Irish Grover", system-ui;
+}
+#sponserSection h2{
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sponser
+{
+    height: 150px;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.spimage{
+    height: 80%;
+    margin: 0px 20px;
+    border-radius:30px;
+}
+
+#footer{
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+#logo img{
+    height: 42px;
+    filter: invert(1);
+    border-radius: 30px;
+}
